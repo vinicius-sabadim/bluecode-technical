@@ -17,8 +17,10 @@ const App = () => {
   }
 
   return (
-    <div className="container">
+    <div className="app__container">
+      <h1 className="app__title">Bluecode front-end tech test</h1>
       <input
+        className="app__input"
         data-testid="barcode"
         type="text"
         value={barcode}

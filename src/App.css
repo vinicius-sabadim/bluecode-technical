@@ -1,0 +1,17 @@
+.app__container {
+    background-color: #fafafa;
+    height: 100vh;
+    padding: 40px;
+}
+
+.app__title {
+    color: #222;
+    margin-bottom: 50px;
+}
+
+.app__input {
+    border: 1px solid #ccc;
+    color: #555;
+    font-size: 24px;
+    padding: 5px 10px;
+}
