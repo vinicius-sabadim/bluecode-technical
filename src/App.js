@@ -25,7 +25,7 @@ const App = () => {
         onChange={e => handleChangeBarcode(e.target.value)}
       />
 
-      <Barcode barcode={barcode} />
+    { barcode && <Barcode barcode={barcode} /> }
     </div>
   )
 }

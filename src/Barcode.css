@@ -1,6 +1,7 @@
 .barcode__container {
     align-items: center;
     display: flex;
+    height: 200px;
     justify-content: center;
     margin-top: 20px;
 }
@@ -10,5 +11,5 @@
     color: #FFFFFF;
     display: flex;
     justify-content: center;
-    margin: 0 5px;
+    margin: 0 1%;
 }
