@@ -15,6 +15,7 @@ const Colors = ({
         <span>Primary</span>
         <HuePicker
           color={primaryColor}
+          data-testid="picker-primary"
           width="300px"
           onChange={onChangePrimaryColor}
         />

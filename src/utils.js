@@ -27,3 +27,17 @@ export const calculateChecksum = barcode => {
 
   return remainder === 0 ? 0 : 10 - remainder
 }
+
+export const calculateHeight = digit => {
+  const remainder = digit % 4
+  return `${remainder * 50 + 50}px`
+}
+
+export const calculateWidth = digit => {
+  // Width of the screen (100%) / 20 (maximun columns on barcode) = 5%
+  // 1% of margin on lateral side
+  if (digit < 4) return '1%'
+  if (digit < 8) return '2%'
+  return '3%'
+}
+
