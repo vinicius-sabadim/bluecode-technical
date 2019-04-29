@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
-import Barcode from './Barcode'
-import Colors from './Colors'
+import Barcode from '../Barcode'
+import Colors from '../Colors'
 
 import './App.css'
 

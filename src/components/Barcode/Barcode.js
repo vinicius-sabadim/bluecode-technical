@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { calculateChecksum } from '../utils'
+import { calculateChecksum } from '../../utils'
 
 import './Barcode.css'
 
