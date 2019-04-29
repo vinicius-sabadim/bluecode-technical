@@ -7,9 +7,15 @@ describe('utils', () => {
       expect(result).toBe(0)
     })
 
-    test('should return a digit different than 0 when the remainder is greater than 0', () => {
-      const result = calculateChecksum('5489850354')
-      expect(result).toBe(7)
+    describe('remainder greater than 0', () => {
+      test('should return 7', () => {
+        const result = calculateChecksum('5489850354')
+        expect(result).toBe(7)
+      })
+      test('should return 3', () => {
+        const result = calculateChecksum('8533218192162301367')
+        expect(result).toBe(3)
+      })
     })
   })
 })

@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import { HuePicker } from 'react-color'
 
 import Barcode from './Barcode'
+import Colors from './Colors'
 
 import './App.css'
 
 const App = () => {
-  const [barcode, setBarcode] = useState('0123456789')
+  const [barcode, setBarcode] = useState('')
   const [primaryColor, setPrimaryColor] = useState('#0693e3')
   const [secondaryColor, setSecondaryColor] = useState('#004dcf')
 
@@ -31,33 +31,21 @@ const App = () => {
     <div className="app__container">
       <h1 className="app__title">Bluecode front-end tech test</h1>
       <div className="app__adjusts">
-      <input
-        className="app__input"
-        data-testid="barcode"
-        placeholder="Barcode"
-        type="text"
-        value={barcode}
-        onChange={e => handleChangeBarcode(e.target.value)}
-      />
-      <div className="app__colors">
-        <label className="app__label">
-          <span>Primary</span>
-          <HuePicker
-            color={primaryColor}
-            width="300px"
-            onChange={handleChangePrimaryColor}
-          />
-        </label>
-        <label className="app__label">
-          <span>Secondary</span>
-          <HuePicker
-            color={secondaryColor}
-            width="300px"
-            onChange={handleChangeSecondaryColor}
-          />
-        </label>
+        <input
+          className="app__input"
+          data-testid="barcode"
+          placeholder="Barcode"
+          type="text"
+          value={barcode}
+          onChange={e => handleChangeBarcode(e.target.value)}
+        />
+        <Colors
+          primaryColor={primaryColor}
+          secondaryColor={secondaryColor}
+          onChangePrimaryColor={handleChangePrimaryColor}
+          onChangeSecondaryColor={handleChangeSecondaryColor}
+        />
       </div>
-    </div>
 
       {barcode && (
         <Barcode

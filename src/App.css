@@ -22,19 +22,3 @@
     padding: 5px 10px;
     width: 100%;
 }
-
-.app__colors {
-    margin: 20px auto 0;
-}
-
-.app__label {
-    color: #222;
-    display: block;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.app__label span {
-    display: block;
-    margin-bottom: 3px;
-}
