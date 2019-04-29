@@ -4,10 +4,8 @@ import { calculateChecksum } from './utils'
 
 import './Barcode.css'
 
-const Barcode = ({ barcode }) => {
+const Barcode = ({ barcode, primaryColor, secondaryColor }) => {
   const digits = barcode.split('')
-  const primaryColor = 'blue'
-  const secondaryColor = 'red'
 
   return (
     <div className="barcode__container">
