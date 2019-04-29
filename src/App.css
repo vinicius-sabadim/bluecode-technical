@@ -1,12 +1,12 @@
 .app__container {
     background-color: #fafafa;
     height: 100vh;
-    padding: 40px;
+    padding: 40px 0;
 }
 
 .app__title {
     color: #222;
-    margin-bottom: 50px;
+    margin: 0 20px 40px;
     text-align: center;
 }
 

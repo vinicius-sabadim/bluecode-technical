@@ -34,6 +34,7 @@ const App = () => {
       <input
         className="app__input"
         data-testid="barcode"
+        placeholder="Barcode"
         type="text"
         value={barcode}
         onChange={e => handleChangeBarcode(e.target.value)}
